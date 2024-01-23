@@ -1,0 +1,60 @@
+/* Override styles for omnistudio-omniscript-text when aria-readonly="true" and specific input conditions are met */
+omnistudio-omniscript-text[aria-readonly="true"].omni-read-only .vlocity-input.slds-input[data-isnumber="false"] {
+    background: rgb(243,243,243) !important;
+}
+
+input[aria-readonly="true"][readonly] {
+    background: rgb(243,243,243) !important; 
+}
+
+omnistudio-omniscript-multiselect[aria-readonly="true"] .slds-checkbox input[type="checkbox"] + label .slds-checkbox_faux {
+    background: rgb(243,243,243) !important; /* Set background to grey with !important */
+}
+
+textarea[aria-readonly="true"][readonly] {
+    background: rgb(243,243,243) !important; /* Set background to grey with !important */
+}
+
+
+/* Adjust width and order for the Continue button */
+.omniscript-btn-next.slds-size_12-of-12.slds-m-bottom_x-small.slds-medium-size_3-of-12 {
+  width: 6%; /* Adjust the width as needed */
+  order: 2; /* Set the order to 2 to place it at the end */
+}
+
+/* Adjust width and order for the Previous button */
+.omniscript-btn-previous.slds-size_12-of-12.slds-m-bottom_x-small.slds-medium-size_3-of-12 {
+  width: 94%;
+    
+   padding-right:88%;
+  order: 1; 
+}
+.slds-col.slds-order_1.slds-medium-order_2.slds-size_12-of-12.slds-medium-size_6-of-12 {
+    width: 99.66667%; /* Adjust the width as needed */
+    
+}
+
+
+.slds-grid.slds-wrap.slds-gutters.slds-p-horizontal_medium.slds-show_medium {
+  display: none !important;
+}
+
+.slds-grid.slds-wrap.slds-gutters.slds-p-horizontal_medium.slds-hide_medium {
+  display: block !important; 
+}
+
+
+/* Target the specific class combination */
+.slds-col.slds-order_2.slds-medium-order_1.slds-size_12-of-12.slds-medium-size_6-of-12 {
+  width: 180% !important;  /* Override width for 12/12 size on all screens */
+}
+
+.omniscript-sfl-actions {
+  display: flex; 
+  justify-content: space-between; 
+}
+
+/* Optional: Ensure full width if needed */
+.omniscript-sfl-actions > div {
+  width: 100%; /* Or adjust as needed */
+}
